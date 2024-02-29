@@ -1,0 +1,27 @@
+<div id="resultados">  
+
+    <ul>
+    {{#each this.resultados as |resultado|}}
+        <li>
+            <em>{{resultado}}</em>
+        </li>
+    {{/each}}
+    </ul>
+
+
+
+</div>
+
+<div id="Operadores">
+    {{input type="number" value=this.model.numero1}}
+    {{input type="number" value=this.model.numero2}}
+
+    <div id="contoladores">
+       
+
+        <button type="button" {{on 'click' this.sumar}}>Sumar</button>
+        <button type="button" {{on 'click' this.restar}}>Restar</button>
+        <button type="button" {{on 'click' this.multiplicar}}>Multiplicar</button>
+        <button type="button" {{on 'click' this.dividir}}>Dividr</button>
+    </div>
+</div>
