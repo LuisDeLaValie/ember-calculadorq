@@ -1,21 +1,45 @@
 
 .app-container {
-    position: relative;
-    width: 100%;
+    
+    display: flex; /* Utiliza un contenedor flexible */
+    justify-content: center; /* Distribuye los elementos alrededor del contenedor */
+    align-items: center; /* Centra los elementos verticalmente */
+    border: 1px solid #ccc; /* Borde para visualizar el contenedor */
+    padding: 10px; /* Añade espaciado interno al contenedor */
+
+    
     height: 100vh;
     background: url('https://github.com/LuisDeLaValie/LuisDeLaValie/raw/main/imgs/Rectangle%202.png') center/cover no-repeat;
 }
 
 #resultados,
 #Operadores {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* position: absolute; */
+    /* width: calc(50% - 10px); Ajusta el ancho según tus necesidades y el espacio de separación */
     background: rgba(255, 255, 255, 0.7); /* Fondo cristalino con opacidad */
     padding: 20px;
     border-radius: 10px;
     backdrop-filter: blur(10px); /* Propiedad de difuminado */
+
+
+    /* width: 48%; Ancho del 48% para dar espacio entre los elementos */
+    text-align: center; /* Centra el texto dentro de cada elemento */
+    border: 1px solid #ddd; /* Borde para visualizar cada elemento */
+    padding: 10px; /* Añade espaciado interno a cada elemento */
+    margin: 5px;
+
+}
+
+#resultaddos {
+    top: 20px; /* Ajusta la posición superior según tus necesidades */
+    left: 20px; /* Ajusta la posición izquierda según tus necesidades */
+    z-index: 2;
+}
+
+#Operadodres {
+    top: 20px; /* Ajusta la posición superior según tus necesidades */
+    right: 20px; /* Ajusta la posición derecha según tus necesidades */
+    z-index: 1;
 }
 
 #resultados ul {
@@ -31,4 +55,3 @@
 #contoladores button {
     margin: 5px;
 }
-
