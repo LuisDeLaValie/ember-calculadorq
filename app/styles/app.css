@@ -1,1 +1,34 @@
-/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+
+.app-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://github.com/LuisDeLaValie/LuisDeLaValie/raw/main/imgs/Rectangle%202.png') center/cover no-repeat;
+}
+
+#resultados,
+#Operadores {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.7); /* Fondo cristalino con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Propiedad de difuminado */
+}
+
+#resultados ul {
+    list-style: none;
+    padding: 0;
+}
+
+#resultados li {
+    margin-bottom: 10px;
+}
+
+#Operadores input,
+#contoladores button {
+    margin: 5px;
+}
+
